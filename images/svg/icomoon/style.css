@@ -1,0 +1,60 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-grant {
+  width: 1.154296875em;
+}
+
+.icon-Header {
+  width: 4.9345703125em;
+}
+
+.icon-languages {
+  width: 1.75em;
+}
+
+.icon-letter-logo {
+  width: 1.0791015625em;
+}
+
+.icon-logo {
+  width: 4.4443359375em;
+}
+
+.icon-menu {
+  width: 1.6669921875em;
+}
+
+.icon-reddit {
+  width: 1.16015625em;
+}
+
+.icon-support {
+  width: 1.1845703125em;
+}
+
+.icon-Telegram {
+  width: 1.0830078125em;
+}
+
+.icon-Twitter {
+  width: 1.125em;
+}
+
+.icon-chocolate-icon {
+  width: 0.875em;
+}

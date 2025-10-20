@@ -1,1 +1,1 @@
-# Finity-Touch
+# goit-js-hw-01
