@@ -45,15 +45,23 @@ button {
   margin: 0 auto;
 }
 
-/* ===== HEADER ===== */
-.header {
-  background-color: #0d0d0d;
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1520px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: visible;
+  }
 }
+
+/** ===== HEADER ===== */
 
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  max-width: 1920px;
+  padding-left: 60px;
+  padding-right: 20px;
 }
 
 .header-logo {
@@ -79,7 +87,112 @@ button {
   background-color: transparent;
 }
 
-/* ===== MAIN SECTION ===== */
+/*! ===== DESKTOP 1920px ===== */
+@media (min-width: 1920px) {
+  .header {
+    padding: 29px 0;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-logo {
+    padding: 0;
+  }
+
+  .header-svg {
+    width: 289px;
+    height: 63px;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 487px;
+  }
+
+  .header-nav-div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-nav-link:nth-of-type(4) {
+    position: relative;
+  }
+  .header-nav-link:nth-of-type(4)::after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 40px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 48px;
+    background: #959595;
+  }
+
+  .header-nav-link {
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+  }
+
+  .lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-left: 40px;
+  }
+
+  .header-select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    padding: 0;
+  }
+
+  .header-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+  }
+  .header-contact-btn {
+    height: 63px;
+    padding: 0 32px;
+    border-radius: 9999px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .header-buy-btn {
+    height: 63px;
+    padding: 0 36px;
+    border: 0;
+    border-radius: 9999px;
+    background: linear-gradient(
+      144deg,
+      #86afff 0%,
+      #a57aff 50.78%,
+      #fb84ff 100%
+    );
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+/** ===== MAIN SECTION ===== */
+
 .main-section {
   background-image: url(../images/main/main.jpg);
   background-repeat: no-repeat;
@@ -88,7 +201,6 @@ button {
   padding-top: 315px;
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 
 .main-shadow {
@@ -98,7 +210,12 @@ button {
   max-width: 115px;
   height: 439px;
   pointer-events: none;
-  opacity: 0.9;
+}
+
+.main-shadow-desk {
+  display: none;
+  position: absolute;
+  pointer-events: none;
 }
 
 .main-title {
@@ -145,7 +262,7 @@ button {
 
 .main-list-item {
   border-radius: 40px;
-  max-width: 305px;
+  width: 100%;
   border: 1px solid transparent;
   background: linear-gradient(#0d0d0d, #0d0d0d) padding-box,
     linear-gradient(149deg, #b2ff0f 0%, #76ffef 100%) border-box;
@@ -154,7 +271,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding-top: 33px;
   margin: 0 auto 70px;
 }
@@ -168,7 +285,6 @@ button {
 .main-list-text {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.4;
   color: #fff;
   text-align: center;
   max-width: 279px;
@@ -186,7 +302,100 @@ button {
   padding: 13.5px;
 }
 
-/* ===== JOURNEY SECTION ===== */
+/*! ===== DESKTOP 1920px ===== */
+
+@media (min-width: 1920px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .main-section {
+    background-image: url(../images/main/main-desk.jpg);
+    background-position: center top;
+    background-size: auto;
+
+    text-align: left;
+    padding-top: 0px;
+
+    max-width: 1520px;
+    padding-top: 125px;
+    margin: 0 auto;
+  }
+
+  .main-shadow {
+    display: none;
+  }
+
+  .main-shadow-desk {
+    display: block;
+    right: -288px;
+    top: 0px;
+    z-index: 0;
+  }
+
+  .main-title {
+    font-size: 120px;
+    text-align: left;
+    padding-left: 3px;
+  }
+
+  .main-title-span {
+    display: block;
+    margin-top: 21px;
+    padding-left: 185px;
+  }
+
+  .main-text-div {
+    justify-content: flex-start;
+  }
+
+  .main-text {
+    font-size: 22px;
+    max-width: 465px;
+    text-align: left;
+    margin-top: 21px;
+    margin-bottom: 45px;
+  }
+
+  .main-btn {
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    padding: 18px 40.5px;
+    margin-top: 0;
+    margin-bottom: 173px;
+  }
+
+  .main-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-list-item {
+    width: calc((100% - 80px) / 3);
+    border-radius: 60px;
+    padding-top: 36px;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-bottom: 178px;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .main-list-text {
+    max-width: 438px;
+    font-size: 17px;
+  }
+
+  .main-list-btn {
+    margin-top: 14px;
+    padding: 14px 0;
+  }
+}
+
+/** ===== JOURNEY SECTION ===== */
+
 .journey-section {
   position: relative;
 }
@@ -203,6 +412,16 @@ button {
   right: -101px;
   top: 355px;
   z-index: 0;
+}
+
+.journey-shadow-desk {
+  display: none;
+  position: absolute;
+  pointer-events: none;
+}
+
+.journey-flow {
+  display: none;
 }
 
 .journey-list {
@@ -261,7 +480,90 @@ button {
   display: block;
 }
 
-/* ===== FAQ SECTION ===== */
+/*! DESKTOP 1920px */
+
+@media (min-width: 1920px) {
+  .journey-section {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 170px 0 160px;
+    overflow: visible;
+  }
+
+  .journey-shadow-desk {
+    display: block;
+    top: -350px;
+    left: -230px;
+  }
+
+  .journey-flow {
+    display: block;
+    position: absolute;
+    left: 70px;
+  }
+
+  .journey-list-icon {
+    display: none;
+  }
+
+  .journey-shadow-left,
+  .journey-shadow-right {
+    display: none;
+  }
+
+  .journey-list {
+    position: relative;
+    z-index: 1;
+    height: 520px;
+  }
+
+  .journey-list-title {
+    font-size: 33px;
+    max-width: 98px;
+  }
+
+  .journey-list-text {
+    font-size: 18px;
+  }
+
+  .journey-list-item {
+    position: absolute;
+    width: 245px;
+    max-width: none;
+  }
+
+  /* Apply */
+  .journey-list-item:nth-child(1) {
+    left: 44px;
+    top: 220px;
+  }
+
+  /* Review */
+  .journey-list-item:nth-child(2) {
+    left: 390px;
+    top: 40px;
+  }
+
+  /* Success */
+  .journey-list-item:nth-child(3) {
+    left: 860px;
+    top: 200px;
+  }
+
+  /* Grants */
+  .journey-list-item:nth-child(4) {
+    left: 1205px;
+    top: 320px;
+  }
+
+  /* Ventures */
+  .journey-list-item:nth-child(5) {
+    left: 1205px;
+    top: -190px;
+  }
+}
+
+/** ===== FAQ SECTION ===== */
 
 .faq-title {
   font-family: "Chakra Petch", sans-serif;
@@ -325,7 +627,7 @@ button {
   pointer-events: none;
 }
 
-/* ===== SUBMIT SECTION ===== */
+/** ===== SUBMIT SECTION ===== */
 .submit-section {
   padding: 0 25px 30px 23px;
 }
