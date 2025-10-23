@@ -470,16 +470,44 @@
       <!-- FAQ SECTION -->
       <section class="faq-section">
         <div class="container">
-          <h2 class="faq-title">Frequently Asked Questions</h2>
-          <img
-            class="faq-img"
-            src="./images/faq/FAQ.jpg"
-            alt="faq"
-            width="371"
-          />
+          <div class="faq-left">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+
+            <picture>
+              <source
+                srcset="
+                  ./images/faq/FAQ-desktop.jpg    1x,
+                  ./images/faq/FAQ-desktop-2x.jpg 2x
+                "
+                media="(min-width: 1920px)"
+              />
+
+              <source
+                srcset="
+                  ./images/faq/FAQ-mobile.jpg    1x,
+                  ./images/faq/FAQ-mobile-2x.jpg 2x
+                "
+                media="(max-width: 1919px)"
+              />
+
+              <img
+                class="faq-img"
+                src="./images/faq/FAQ-desktop.jpg"
+                alt="faq"
+                width="796"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+
           <ul class="faq-list">
             <li class="faq-list-item">
               <h2 class="faq-list-title">What is Finity Touch?</h2>
+              <h2 class="faq-list-title-desktop">
+                How do I apply for consideration of my idea?
+              </h2>
+
               <p class="faq-list-text">
                 15% of the issue of Finity tokens is used as a monetary fund for
                 the implementation of your ideas.
@@ -490,6 +518,10 @@
             </li>
             <li class="faq-list-item">
               <h2 class="faq-list-title">Where can I buy a Finity token?</h2>
+              <h2 class="faq-list-title-desktop">
+                What size of investment can I get?
+              </h2>
+
               <p class="faq-list-text">
                 15% of the issue of Finity tokens is used as a monetary fund for
                 the implementation of your ideas.
@@ -500,6 +532,10 @@
             </li>
             <li class="faq-list-item">
               <h2 class="faq-list-title">Where can I buy a Finity token?</h2>
+              <h2 class="faq-list-title-desktop">
+                How is the capital formed in your fund?
+              </h2>
+
               <p class="faq-list-text">
                 15% of the issue of Finity tokens is used as a monetary fund for
                 the implementation of your ideas.
@@ -512,6 +548,10 @@
               <h2 class="faq-list-title">
                 Didn't find the answer to your question?
               </h2>
+              <h2 class="faq-list-title-desktop">
+                Didn't find the answer to your question?
+              </h2>
+
               <p class="faq-list-text">
                 15% of the issue of Finity tokens is used as a monetary fund for
                 the implementation of your ideas.
@@ -526,6 +566,40 @@
 
       <!-- SUBMIT SECTION -->
       <section class="submit-section">
+        <picture>
+          <source
+            srcset="
+              ./images/submit/submit-left-2x.png 2x,
+              ./images/submit/submit-left.png    1x
+            "
+            media="(min-width: 1920px)"
+          />
+          <img
+            class="submit-img-left"
+            src="./images/submit/submit-left.png"
+            alt="decor left"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ./images/submit/submit-right-2x.png 2x,
+              ./images/submit/submit-right.png    1x
+            "
+            media="(min-width: 1920px)"
+          />
+          <img
+            class="submit-img-right"
+            src="./images/submit/submit-right.png"
+            alt="decor right"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+
         <div class="container">
           <div class="submit-wrap">
             <svg class="submit-corner corner-left" width="30" height="30">
@@ -535,6 +609,8 @@
             <svg class="submit-corner corner-right" width="30" height="30">
               <use href="./images/svg/symbol-defs.svg#icon-line_2"></use>
             </svg>
+
+            <h2 class="submit-title">Submit your application today</h2>
 
             <div class="submit-buttons">
               <button class="submit-btn-contact" type="button">
@@ -630,51 +706,101 @@
       <!-- FOOTER -->
 
       <footer class="footer">
+        <!-- декоративне зображення справа внизу (підлаштуй шлях за потреби) -->
+        <picture>
+          <source
+            srcset="
+              ./images/footer/footer-img-2x.png 2x,
+              ./images/footer/footer-img.png    1x
+            "
+            media="(min-width: 1920px)"
+          />
+          <img
+            class="footer-img"
+            src="./images/footer/footer-img.png"
+            alt="Finity token"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+
         <div class="container footer-container">
-          <a class="footer-link" href="./index.html" aria-label="Finity Touch">
+          <a
+            class="footer-logo-link is-mobile-only"
+            href="./index.html"
+            aria-label="Finity Touch"
+          >
             <svg class="footer-logo" width="120" height="27">
               <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
             </svg>
           </a>
+          <div class="footer-top">
+            <nav class="footer-nav">
+              <ul class="footer-menu">
+                <li class="footer-item">
+                  <a class="footer-link" href="./index.html">Home</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link" href="./index.html">Marketplace</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link" href="./index.html">Token</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link" href="./index.html">Fund</a>
+                </li>
+              </ul>
+            </nav>
 
-          <nav class="footer-nav">
-            <ul class="footer-menu">
-              <li class="footer-item">
-                <a class="footer-link" href="./index.html">Home</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link" href="./index.html">Marketplace</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link" href="./index.html">Token</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link" href="./index.html">Fund</a>
-              </li>
-            </ul>
-          </nav>
+            <!-- селект мови як у хедері -->
+            <div class="footer-langwrap">
+              <select class="footer-select" name="lang" aria-label="Language">
+                <option value="english">EN</option>
+                <option value="ukrainian">UA</option>
+              </select>
+              <svg
+                class="footer-select-icon"
+                width="13"
+                height="8"
+                viewBox="0 0 13 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M0.361328 0.36084L6.10046 6.36084L12.3613 0.36084"
+                  stroke="#959595"
+                />
+              </svg>
+            </div>
 
-          <div class="footer-buttons">
-            <button class="footer-contact-btn" type="button">Contact Us</button>
-            <button class="footer-buy-btn" type="button">Buy Token</button>
+            <div class="footer-buttons">
+              <button class="footer-contact-btn" type="button">
+                Contact Us
+              </button>
+              <button class="footer-buy-btn" type="button">Buy Token</button>
+            </div>
           </div>
 
-          <select
-            name="lang"
-            id="lang"
-            class="footer-lang hidden"
-            aria-label="Language"
-          >
-            <option value="english">EN</option>
-            <option value="ukrainian">UA</option>
-          </select>
+          <!-- нижній ряд: логотип • текст -->
+          <div class="footer-bottom">
+            <a
+              class="footer-logo-link is-desktop-only"
+              href="./index.html"
+              aria-label="Finity Touch"
+            >
+              <svg class="footer-logo" width="254" height="55">
+                <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </a>
 
-          <p class="footer-text">
-            This website is maintained by Tihon Belenkiy. The contents and
-            opinions of this website are those of Finity Touch. Finity Touch
-            provides links to cryptocurrency exchanges as a service to the
-            public
-          </p>
+            <p class="footer-text">
+              This website is maintained by Tihon Belenkiy. The contents and
+              opinions of this website are those of Finity Touch. Finity Touch
+              provides links to cryptocurrency exchanges as a service to the
+              public
+            </p>
+          </div>
         </div>
       </footer>
     </main>
