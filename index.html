@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -30,8 +30,8 @@
       href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/slider.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -39,13 +39,14 @@
       <div class="container header-container">
         <a class="header-logo" href="./index.html">
           <svg class="header-svg" width="120" height="27">
-            <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
+            <use href="./public/images/svg/symbol-defs.svg#icon-logo"></use>
           </svg>
         </a>
+
         <nav class="header-nav">
           <div class="header-nav-div">
             <a class="header-nav-link" href="./index.html">Home</a>
-            <a class="header-nav-link" href="./index.html">Marketplace</a>
+            <a class="header-nav-link" href="./marketplace.html">Marketplace</a>
             <a class="header-nav-link" href="./index.html">Token</a>
             <a class="header-nav-link" href="./index.html">Fund</a>
 
@@ -77,7 +78,7 @@
 
         <button type="button" class="header-menu-btn data-menu-open">
           <svg class="header-menu-svg" width="30" height="16">
-            <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+            <use href="./public/images/svg/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
@@ -209,7 +210,9 @@
               <ul class="main-list swiper-wrapper">
                 <li class="main-list-item swiper-slide">
                   <svg class="main-list-icon" width="59" height="52">
-                    <use href="./images/svg/symbol-defs.svg#icon-grant"></use>
+                    <use
+                      href="./public/images/svg/symbol-defs.svg#icon-grant"
+                    ></use>
                   </svg>
                   <p class="main-list-text">
                     Finity Touch is very excited to offer Grants to projects
@@ -222,7 +225,9 @@
 
                 <li class="main-list-item swiper-slide">
                   <svg class="main-list-icon" width="59" height="52">
-                    <use href="./images/svg/symbol-defs.svg#icon-support"></use>
+                    <use
+                      href="./public/images/svg/symbol-defs.svg#icon-support"
+                    ></use>
                   </svg>
                   <p class="main-list-text">
                     Receive the ultimate support & backing to build a
@@ -233,7 +238,9 @@
 
                 <li class="main-list-item swiper-slide">
                   <svg class="main-list-icon" width="59" height="52">
-                    <use href="./images/svg/symbol-defs.svg#icon-nft"></use>
+                    <use
+                      href="./public/images/svg/symbol-defs.svg#icon-nft"
+                    ></use>
                   </svg>
                   <p class="main-list-text">
                     Successful Grant recipients will receive access to monetary
@@ -442,7 +449,9 @@
                 Tell Finity Touch about your project
               </p>
               <svg class="journey-list-icon" width="47" height="24">
-                <use href="./images/svg/symbol-defs.svg#icon-arrow"></use>
+                <use
+                  href="./public/images/svg/symbol-defs.svg#icon-arrow"
+                ></use>
               </svg>
             </li>
             <li class="journey-list-item">
@@ -452,7 +461,9 @@
                 and contact you.
               </p>
               <svg class="journey-list-icon" width="47" height="24">
-                <use href="./images/svg/symbol-defs.svg#icon-arrow"></use>
+                <use
+                  href="./public/images/svg/symbol-defs.svg#icon-arrow"
+                ></use>
               </svg>
             </li>
             <li class="journey-list-item">
@@ -461,7 +472,9 @@
                 Successful applicants will be contacted by Finity Foundation
               </p>
               <svg class="journey-list-icon" width="47" height="24">
-                <use href="./images/svg/symbol-defs.svg#icon-arrow"></use>
+                <use
+                  href="./public/images/svg/symbol-defs.svg#icon-arrow"
+                ></use>
               </svg>
             </li>
             <li class="journey-list-item">
@@ -489,23 +502,23 @@
             <picture>
               <source
                 srcset="
-                  ./images/faq/FAQ-desktop.jpg    1x,
-                  ./images/faq/FAQ-desktop-2x.jpg 2x
+                  ./public/images/faq/FAQ-desktop.jpg    1x,
+                  ./public/images/faq/FAQ-desktop-2x.jpg 2x
                 "
                 media="(min-width: 1920px)"
               />
 
               <source
                 srcset="
-                  ./images/faq/FAQ-mobile.jpg    1x,
-                  ./images/faq/FAQ-mobile-2x.jpg 2x
+                  ./public/images/faq/FAQ-mobile.jpg    1x,
+                  ./public/images/faq/FAQ-mobile-2x.jpg 2x
                 "
                 media="(max-width: 1919px)"
               />
 
               <img
                 class="faq-img"
-                src="./images/faq/FAQ-desktop.jpg"
+                src="./public/images/faq/FAQ-desktop.jpg"
                 alt="faq"
                 width="796"
                 loading="lazy"
@@ -529,7 +542,7 @@
               </div>
 
               <svg class="faq-list-item-svg" width="18" height="18">
-                <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                <use href="./public/images/svg/symbol-defs.svg#icon-plus"></use>
               </svg>
             </li>
 
@@ -547,7 +560,7 @@
               </div>
 
               <svg class="faq-list-item-svg" width="18" height="18">
-                <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                <use href="./public/images/svg/symbol-defs.svg#icon-plus"></use>
               </svg>
             </li>
 
@@ -565,7 +578,7 @@
               </div>
 
               <svg class="faq-list-item-svg" width="18" height="18">
-                <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                <use href="./public/images/svg/symbol-defs.svg#icon-plus"></use>
               </svg>
             </li>
 
@@ -585,7 +598,7 @@
               </div>
 
               <svg class="faq-list-item-svg" width="18" height="18">
-                <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                <use href="./public/images/svg/symbol-defs.svg#icon-plus"></use>
               </svg>
             </li>
           </ul>
@@ -648,14 +661,14 @@
         <picture>
           <source
             srcset="
-              ./images/submit/submit-left-2x.png 2x,
-              ./images/submit/submit-left.png    1x
+              ./public/images/submit/submit-left-2x.png 2x,
+              ./public/images/submit/submit-left.png    1x
             "
             media="(min-width: 1920px)"
           />
           <img
             class="submit-img-left"
-            src="./images/submit/submit-left.png"
+            src="./public/images/submit/submit-left.png"
             alt="decor left"
             loading="lazy"
             decoding="async"
@@ -665,14 +678,14 @@
         <picture>
           <source
             srcset="
-              ./images/submit/submit-right-2x.png 2x,
-              ./images/submit/submit-right.png    1x
+              ./public/images/submit/submit-right-2x.png 2x,
+              ./public/images/submit/submit-right.png    1x
             "
             media="(min-width: 1920px)"
           />
           <img
             class="submit-img-right"
-            src="./images/submit/submit-right.png"
+            src="./public/images/submit/submit-right.png"
             alt="decor right"
             loading="lazy"
             decoding="async"
@@ -682,11 +695,11 @@
         <div class="container">
           <div class="submit-wrap">
             <svg class="submit-corner corner-left" width="30" height="30">
-              <use href="./images/svg/symbol-defs.svg#icon-line_1"></use>
+              <use href="./public/images/svg/symbol-defs.svg#icon-line_1"></use>
             </svg>
 
             <svg class="submit-corner corner-right" width="30" height="30">
-              <use href="./images/svg/symbol-defs.svg#icon-line_2"></use>
+              <use href="./public/images/svg/symbol-defs.svg#icon-line_2"></use>
             </svg>
 
             <h2 class="submit-title">Submit your application today</h2>
@@ -709,7 +722,9 @@
                 aria-label="LinkedIn"
               >
                 <svg class="submit-socials-icon" width="37" height="37">
-                  <use href="./images/svg/symbol-defs.svg#icon-LinkedIn"></use>
+                  <use
+                    href="./public/images/svg/symbol-defs.svg#icon-LinkedIn"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -722,7 +737,9 @@
                 aria-label="Instagram"
               >
                 <svg class="submit-socials-icon" width="37" height="37">
-                  <use href="./images/svg/symbol-defs.svg#icon-Instagram"></use>
+                  <use
+                    href="./public/images/svg/symbol-defs.svg#icon-Instagram"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -735,7 +752,9 @@
                 aria-label="Telegram"
               >
                 <svg class="submit-socials-icon" width="37" height="37">
-                  <use href="./images/svg/symbol-defs.svg#icon-Telegram"></use>
+                  <use
+                    href="./public/images/svg/symbol-defs.svg#icon-Telegram"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -748,7 +767,9 @@
                 aria-label="Twitter / X"
               >
                 <svg class="submit-socials-icon" width="37" height="37">
-                  <use href="./images/svg/symbol-defs.svg#icon-Twitter"></use>
+                  <use
+                    href="./public/images/svg/symbol-defs.svg#icon-Twitter"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -761,7 +782,9 @@
                 aria-label="Reddit"
               >
                 <svg class="submit-socials-icon" width="37" height="37">
-                  <use href="./images/svg/symbol-defs.svg#icon-reddit"></use>
+                  <use
+                    href="./public/images/svg/symbol-defs.svg#icon-reddit"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -774,7 +797,9 @@
                 aria-label="Discord"
               >
                 <svg class="submit-socials-icon" width="37" height="37">
-                  <use href="./images/svg/symbol-defs.svg#icon-discord"></use>
+                  <use
+                    href="./public/images/svg/symbol-defs.svg#icon-discord"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -788,14 +813,14 @@
         <picture>
           <source
             srcset="
-              ./images/footer/footer-img-2x.png 2x,
-              ./images/footer/footer-img.png    1x
+              ./public/images/footer/footer-img-2x.png 2x,
+              ./public/images/footer/footer-img.png    1x
             "
             media="(min-width: 1920px)"
           />
           <img
             class="footer-img"
-            src="./images/footer/footer-img.png"
+            src="./public/images/footer/footer-img.png"
             alt="Finity token"
             loading="lazy"
             decoding="async"
@@ -809,7 +834,7 @@
             aria-label="Finity Touch"
           >
             <svg class="footer-logo" width="120" height="27">
-              <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
+              <use href="./public/images/svg/symbol-defs.svg#icon-logo"></use>
             </svg>
           </a>
           <div class="footer-top">
@@ -819,7 +844,9 @@
                   <a class="footer-link" href="./index.html">Home</a>
                 </li>
                 <li class="footer-item">
-                  <a class="footer-link" href="./index.html">Marketplace</a>
+                  <a class="footer-link" href="./marketplace.html"
+                    >Marketplace</a
+                  >
                 </li>
                 <li class="footer-item">
                   <a class="footer-link" href="./index.html">Token</a>
@@ -866,7 +893,7 @@
               aria-label="Finity Touch"
             >
               <svg class="footer-logo" width="254" height="55">
-                <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
+                <use href="./public/images/svg/symbol-defs.svg#icon-logo"></use>
               </svg>
             </a>
 
@@ -884,7 +911,8 @@
     <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 
-    <script src="./js/main.js"></script>
-    <script src="./js/accordion.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/slider.js"></script>
+    <script src="./src/js/accordion.js"></script>
   </body>
 </html>

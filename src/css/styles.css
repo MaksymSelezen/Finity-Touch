@@ -204,7 +204,8 @@ button {
 
 .main-section {
   position: relative;
-  background: url(../images/main/main.jpg) no-repeat center top / 375px auto;
+  background: url(/public/images/main/main.jpg) no-repeat center top / 375px
+    auto;
   padding-top: 315px;
   text-align: center;
 }
@@ -213,7 +214,7 @@ button {
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .main-section {
-    background-image: url(../images/main/main-2x.jpg);
+    background-image: url(/public/images/main/main-2x.jpg);
   }
 }
 
@@ -319,8 +320,8 @@ button {
   }
 
   .main-section {
-    background: url(../images/main/main-desk.jpg) no-repeat center top / 1920px
-      auto;
+    background: url(/public/images/main/main-desk.jpg) no-repeat center top /
+      1920px auto;
     text-align: left;
     max-width: 1520px;
     padding-top: 125px;
@@ -330,7 +331,7 @@ button {
     (min-width: 1920px) and (min-resolution: 192dpi),
     (min-width: 1920px) and (min-resolution: 2dppx) {
     .main-section {
-      background-image: url(../images/main/main-desk-2x.jpg);
+      background-image: url(/public/images/main/main-desk-2x.jpg);
     }
   }
 
@@ -1115,5 +1116,78 @@ button {
   .header-select option:checked,
   .footer-select option:checked {
     background-color: #1b1b1b;
+  }
+}
+
+/************* FOOTER SECTION *************/
+
+.coming-soon {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.coming-soon-shadow-left {
+  position: absolute;
+  overflow: visible;
+  top: -39px;
+}
+
+.coming-soon-shadow-rigth {
+  position: absolute;
+  overflow: visible;
+  top: 457px;
+  right: 0px;
+}
+
+.coming-soon-shadowdesk-left {
+  display: none;
+}
+
+.coming-soon-shadowdesk-right {
+  display: none;
+}
+
+.coming-soon-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: #fff;
+}
+
+/****! MEDIA FOOTER ****/
+
+@media (min-width: 1920px) {
+  .coming-soon-title {
+    font-size: 150px;
+  }
+
+  .coming-soon-shadow-left {
+    display: none;
+  }
+
+  .coming-soon-shadow-rigth {
+    display: none;
+  }
+
+  .coming-soon-shadowdesk-left {
+    display: block;
+    position: absolute;
+    overflow: visible;
+    top: 0;
+    left: 0;
+  }
+
+  .coming-soon-shadowdesk-right {
+    display: block;
+    position: absolute;
+    overflow: visible;
+    bottom: 0;
+    right: 0;
   }
 }

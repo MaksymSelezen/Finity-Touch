@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finity Touch</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
+
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/slider.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo" href="./index.html">
+          <svg class="header-svg" width="120" height="27">
+            <use href="./public/images/svg/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+        <nav class="header-nav">
+          <div class="header-nav-div">
+            <a class="header-nav-link" href="./index.html">Home</a>
+            <a class="header-nav-link" href="./marketplace.html">Marketplace</a>
+            <a class="header-nav-link" href="./index.html">Token</a>
+            <a class="header-nav-link" href="./index.html">Fund</a>
+
+            <div class="lang">
+              <select class="header-select" name="lang" id="lang">
+                <option value="english">EN</option>
+                <option value="ukrainian">UA</option>
+              </select>
+              <svg
+                width="13"
+                height="8"
+                viewBox="0 0 13 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.361328 0.36084L6.10046 6.36084L12.3613 0.36084"
+                  stroke="#959595"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="header-nav-btn">
+            <button class="header-contact-btn" type="submit">Contact Us</button>
+            <button class="header-buy-btn" type="submit">Buy Token</button>
+          </div>
+        </nav>
+
+        <button type="button" class="header-menu-btn data-menu-open">
+          <svg class="header-menu-svg" width="30" height="16">
+            <use href="./public/images/svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="coming-soon">
+        <svg
+          class="coming-soon-shadow-left"
+          width="309"
+          height="552"
+          viewBox="0 0 309 552"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_f_2_1256)">
+            <path
+              d="M-42.4117 405.717C-23.0032 439.334 61.0329 305.632 94.6 286.252C128.167 266.872 183.84 319.912 164.432 286.296C156.995 273.415 157.719 195.275 139.416 141.816C109.952 55.7595 -30.9225 0.507912 -51.6276 12.462C-85.1947 31.842 -61.8201 372.101 -42.4117 405.717Z"
+              fill="url(#paint0_linear_2_1256)"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_2_1256"
+              x="-208.587"
+              y="-129.159"
+              width="517.024"
+              height="680.271"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="70"
+                result="effect1_foregroundBlur_2_1256"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_2_1256"
+              x1="-4.85142"
+              y1="-14.5442"
+              x2="-75.6483"
+              y2="352.465"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FF6C56" />
+              <stop offset="1" stop-color="#FF9344" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <svg
+          class="coming-soon-shadow-rigth"
+          width="269"
+          height="371"
+          viewBox="0 0 269 371"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_f_2_1255)">
+            <path
+              d="M145.371 502.739C164.183 535.323 245.636 405.73 278.172 386.946C310.707 368.161 364.669 419.572 345.857 386.989C338.649 374.504 339.351 298.766 321.61 246.95C293.052 163.538 156.507 109.985 136.439 121.571C103.903 140.356 126.56 470.156 145.371 502.739Z"
+              fill="url(#paint0_linear_2_1255)"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_2_1255"
+              x="0"
+              y="0"
+              width="469.739"
+              height="627.969"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="60"
+                result="effect1_foregroundBlur_2_1255"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_2_1255"
+              x1="181.777"
+              y1="95.3953"
+              x2="113.156"
+              y2="451.124"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FF6C56" />
+              <stop offset="1" stop-color="#FF9344" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <svg
+          class="coming-soon-shadowdesk-left"
+          width="613"
+          height="880"
+          viewBox="0 0 613 880"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_f_2_786)">
+            <path
+              d="M-141.788 568.098C-99.9306 640.596 81.3056 352.248 153.698 310.453C226.091 268.657 346.158 383.047 304.301 310.548C288.262 282.769 289.824 114.249 250.35 -1.04336C186.806 -186.637 -117.01 -305.795 -161.663 -280.015C-234.056 -238.219 -183.645 495.599 -141.788 568.098Z"
+              fill="url(#paint0_linear_2_786)"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_2_786"
+              x="-498.24"
+              y="-583.511"
+              width="1111.18"
+              height="1463.24"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="150"
+                result="effect1_foregroundBlur_2_786"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_2_786"
+              x1="-60.7835"
+              y1="-338.257"
+              x2="-213.467"
+              y2="453.251"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FF6C56" />
+              <stop offset="1" stop-color="#FF9344" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <svg
+          class="coming-soon-shadowdesk-right"
+          width="609"
+          height="859"
+          viewBox="0 0 609 859"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_f_2_785)">
+            <path
+              d="M356.452 1151.61C398.309 1224.11 579.545 935.76 651.938 893.964C724.33 852.168 844.398 966.558 802.541 894.059C786.502 866.28 788.064 697.76 748.59 582.468C685.046 396.874 381.23 277.716 336.577 303.497C264.184 345.292 314.595 1079.11 356.452 1151.61Z"
+              fill="url(#paint0_linear_2_785)"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_2_785"
+              x="0"
+              y="0"
+              width="1111.18"
+              height="1463.24"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="150"
+                result="effect1_foregroundBlur_2_785"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_2_785"
+              x1="437.456"
+              y1="245.254"
+              x2="284.772"
+              y2="1036.76"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FF6C56" />
+              <stop offset="1" stop-color="#FF9344" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <h1 class="coming-soon-title">COMING SOON</h1>
+      </section>
+    </main>
+  </body>
+</html>
