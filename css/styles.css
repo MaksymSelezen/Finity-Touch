@@ -550,6 +550,10 @@ button {
   display: none;
 }
 
+.faq-shadow {
+  display: none;
+}
+
 .faq-title {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
@@ -573,6 +577,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  z-index: 1;
 }
 
 .faq-list-item {
@@ -607,7 +612,7 @@ button {
   position: absolute;
   top: 15px;
   right: 15px;
-  pointer-events: none;
+  outline: none;
 }
 
 /****! MEDIA FAQ ****/
@@ -621,6 +626,7 @@ button {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 17px;
+    position: relative;
   }
 
   .faq-left {
@@ -665,6 +671,7 @@ button {
     display: block;
     font-size: 28px;
     max-width: 630px;
+    margin-bottom: 20px;
   }
   .faq-list-text {
     font-size: 19px;
@@ -676,6 +683,14 @@ button {
     height: 21px;
     top: 37px;
     right: 28px;
+  }
+
+  .faq-shadow {
+    display: block;
+    position: absolute;
+    right: -63px;
+    top: 161px;
+    overflow: visible;
   }
 }
 
@@ -1072,5 +1087,33 @@ button {
     transform: translateY(-50%);
     max-width: 220px;
     z-index: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-select,
+  .footer-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+  }
+
+  .header-select:focus,
+  .footer-select:focus {
+    outline: none;
+  }
+
+  .header-select option,
+  .footer-select option {
+    background-color: #0d0d0d;
+    color: #fff;
+  }
+
+  .header-select option:checked,
+  .footer-select option:checked {
+    background-color: #1b1b1b;
   }
 }
