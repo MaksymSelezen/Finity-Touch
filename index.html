@@ -20,7 +20,18 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -194,43 +205,45 @@
           </div>
           <button class="main-btn" type="submit">Leave a request</button>
           <div class="main-list-div">
-            <ul class="main-list">
-              <li class="main-list-item">
-                <svg class="main-list-icon" width="59" height="52">
-                  <use href="./images/svg/symbol-defs.svg#icon-grant"></use>
-                </svg>
-                <p class="main-list-text">
-                  Finity Touch is very excited to offer Grants to projects
-                  seeking to build on the FNT protocol.All Grants offered to
-                  prospective builders are subject to the final approval by
-                  Finity Touch
-                </p>
-                <button class="main-list-btn">More</button>
-              </li>
+            <div class="main-slider swiper" id="grants-swiper">
+              <ul class="main-list swiper-wrapper">
+                <li class="main-list-item swiper-slide">
+                  <svg class="main-list-icon" width="59" height="52">
+                    <use href="./images/svg/symbol-defs.svg#icon-grant"></use>
+                  </svg>
+                  <p class="main-list-text">
+                    Finity Touch is very excited to offer Grants to projects
+                    seeking to build on the FNT protocol.All Grants offered to
+                    prospective builders are subject to the final approval by
+                    Finity Touch
+                  </p>
+                  <button class="main-list-btn">More</button>
+                </li>
 
-              <li class="main-list-item">
-                <svg class="main-list-icon" width="59" height="52">
-                  <use href="./images/svg/symbol-defs.svg#icon-support"></use>
-                </svg>
-                <p class="main-list-text">
-                  Receive the ultimate support & backing to build a world-class
-                  game together with Finity Foundation
-                </p>
-                <button class="main-list-btn">More</button>
-              </li>
+                <li class="main-list-item swiper-slide">
+                  <svg class="main-list-icon" width="59" height="52">
+                    <use href="./images/svg/symbol-defs.svg#icon-support"></use>
+                  </svg>
+                  <p class="main-list-text">
+                    Receive the ultimate support & backing to build a
+                    world-class game together with Finity Foundation
+                  </p>
+                  <button class="main-list-btn">More</button>
+                </li>
 
-              <li class="main-list-item">
-                <svg class="main-list-icon" width="59" height="52">
-                  <use href="./images/svg/symbol-defs.svg#icon-nft"></use>
-                </svg>
-                <p class="main-list-text">
-                  Successful Grant recipients will receive access to monetary
-                  support, milestone-based FNT rewards, and access to deep
-                  blockchain gaming support and expertise
-                </p>
-                <button class="main-list-btn">More</button>
-              </li>
-            </ul>
+                <li class="main-list-item swiper-slide">
+                  <svg class="main-list-icon" width="59" height="52">
+                    <use href="./images/svg/symbol-defs.svg#icon-nft"></use>
+                  </svg>
+                  <p class="main-list-text">
+                    Successful Grant recipients will receive access to monetary
+                    support, milestone-based FNT rewards, and access to deep
+                    blockchain gaming support and expertise
+                  </p>
+                  <button class="main-list-btn">More</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -801,5 +814,9 @@
         </div>
       </footer>
     </main>
+
+    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
