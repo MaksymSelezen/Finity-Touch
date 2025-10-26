@@ -360,7 +360,8 @@ button {
 
 .main-section {
   position: relative;
-  background: url(/images/main/main.jpg) no-repeat center top / 375px auto;
+  background: url(../public/images/main/main.jpg) no-repeat center top / 375px
+    auto;
   padding-top: 315px;
   text-align: center;
 }
@@ -369,7 +370,7 @@ button {
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .main-section {
-    background-image: url(/images/main/main-2x.jpg);
+    background-image: url(../public/images/main/main-2x.jpg);
   }
 }
 
@@ -475,8 +476,8 @@ button {
   }
 
   .main-section {
-    background: url(/images/main/main-desk.jpg) no-repeat center top / 1920px
-      auto;
+    background: url(../public/images/main/main-desk.jpg) no-repeat center top /
+      1920px auto;
     text-align: left;
     max-width: 1520px;
     padding-top: 125px;
@@ -486,7 +487,7 @@ button {
     (min-width: 1920px) and (min-resolution: 192dpi),
     (min-width: 1920px) and (min-resolution: 2dppx) {
     .main-section {
-      background-image: url(/public/images/main/main-desk-2x.jpg);
+      background-image: url(../public/images/main/main-desk-2x.jpg);
     }
   }
 
